@@ -14,10 +14,13 @@ const handleInputChange=(e)=>{
 const handleAddTask=()=>{
     let newArr=[]
 
+    //oldarr=[task1]
+    //newarr=[...OLDARR,tASK2]
+
     console.log(props.allTasks==false)//true
     if(props.allTasks){
-        console.log(...props.allTasks)
-      newArr=[...props.allTasks,inputValue]
+        console.log(...props.allTasks,"spread operator19")
+        newArr=[...props.allTasks,inputValue]
     }
     else{
      newArr.push(inputValue)

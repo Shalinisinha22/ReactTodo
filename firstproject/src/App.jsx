@@ -5,7 +5,7 @@ function App() {
   
   const [allTasks,setAllTasks]=useState([])
   // let count=0
-  const [count, setCount]=useState(0)
+  const [count, setCount]=useState(100)
 
  const handleIncrement=()=>{
     setCount(count + 1)
@@ -18,7 +18,7 @@ function App() {
  }
   return (
 <>
-<h1>Count value is: {count}</h1>
+<h1 >Count value is: {count}</h1>
 <button onClick={handleIncrement}>Increment</button>
 <button onClick={handleDecrement}>Decrement</button>
 
