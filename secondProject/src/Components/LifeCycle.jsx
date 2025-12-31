@@ -28,12 +28,12 @@ console.log("before render")
 
 //third type with dependency
 useEffect(()=>{
-   console.log("only render one time")
+   console.log("only render when count is updated")
    //cleanup
    return (()=>{
-     console.log("component unmounted")
+     console.log("Cleanup function called when count changed")
    })
-},[])
+},[count])
 
   return (
     <div>

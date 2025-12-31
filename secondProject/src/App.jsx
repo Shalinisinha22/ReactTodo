@@ -17,8 +17,8 @@ const [show,setShow]=useState(true)
     show && <LifeCycle></LifeCycle>
    } */}
 
-  <DocumentTitleUpdater></DocumentTitleUpdater>
-  
+  {/* <DocumentTitleUpdater></DocumentTitleUpdater> */}
+  {/* <test2> */}
 
    </>
   )
